@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AUDIONYX LIGHT & SOUNDS</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  font-family:'Segoe UI',sans-serif;
+  background:#111;
+  color:#f0f0f0;
+  line-height:1.6;
+}
+
+/* HEADER */
+header{
+  padding:50px 20px;
+  text-align:center;
+  background:#1a1a1a;
+  border-bottom:2px solid #b22222;
+}
+
+header h1{
+  font-size:36px;
+  color:#b22222;
+}
+
+header p{
+  margin-top:10px;
+  color:#ccc;
+}
+
+/* NAV */
+nav{
+  margin-top:20px;
+}
+
+nav a{
+  color:#ddd;
+  text-decoration:none;
+  margin:0 15px;
+}
+
+nav a:hover{
+  color:#b22222;
+}
+
+/* BOOK BUTTON */
+.book-order{
+  display:inline-block;
+  margin-top:35px;
+  padding:16px 42px;
+  background:linear-gradient(135deg,#ff0000,#b00000);
+  color:#fff;
+  font-weight:700;
+  letter-spacing:1px;
+  text-decoration:none;
+  border-radius:50px;
+  box-shadow:0 0 20px rgba(255,0,0,0.6);
+  animation:pulse 2s infinite;
+}
+
+.book-order:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 35px rgba(255,0,0,0.9);
+}
+
+@keyframes pulse{
+  0%{box-shadow:0 0 15px rgba(255,0,0,0.6);}
+  50%{box-shadow:0 0 35px rgba(255,0,0,1);}
+  100%{box-shadow:0 0 15px rgba(255,0,0,0.6);}
+}
+
+/* SECTIONS */
+section{
+  max-width:1000px;
+  margin:60px auto;
+  padding:40px;
+  background:#1c1c1c;
+  border-radius:12px;
+}
+
+section h2{
+  text-align:center;
+  margin-bottom:25px;
+  color:#b22222;
+}
+
+/* SERVICES */
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+
+.service-card{
+  background:#222;
+  padding:25px;
+  border-radius:12px;
+  text-align:center;
+}
+
+/* DETAILS */
+.details-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:25px;
+}
+
+.detail-box{
+  background:#222;
+  padding:20px;
+  border-left:4px solid #b22222;
+  border-radius:10px;
+}
+
+/* SOCIAL */
+.social{
+  text-align:center;
+  margin:30px 0;
+}
+
+.social a{
+  color:#b22222;
+  font-size:22px;
+  margin:0 10px;
+  text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:25px;
+  background:#1a1a1a;
+  color:#aaa;
+  font-size:14px;
+}
+
+footer span{
+  display:block;
+  font-size:12px;
+  margin-top:5px;
+}
+
+/* 🔥 FLOATING WHATSAPP */
+.whatsapp-float{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25d366;
+  color:#fff;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  text-align:center;
+  font-size:32px;
+  line-height:60px;
+  box-shadow:0 0 20px rgba(37,211,102,0.8);
+  z-index:1000;
+  animation:waPulse 2s infinite;
+}
+
+.whatsapp-float:hover{
+  transform:scale(1.1);
+}
+
+@keyframes waPulse{
+  0%{box-shadow:0 0 15px rgba(37,211,102,0.6);}
+  50%{box-shadow:0 0 30px rgba(37,211,102,1);}
+  100%{box-shadow:0 0 15px rgba(37,211,102,0.6);}
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  header h1{font-size:28px}
+  section{margin:40px 20px;padding:25px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>AUDIONYX LIGHT & SOUNDS</h1>
+  <p>Professional Audio • Lighting • Stage Setup</p>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#why">More Info</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <a href="https://audionyxsound-rgb.github.io/audinyx/" target="_blank" class="book-order">
+    BOOK YOUR EVENT NOW
+  </a>
+</header>
+
+<section id="home">
+  <h2>About Us</h2>
+  <p>
+    AUDIONYX LIGHT & SOUNDS provides premium sound systems,
+    professional lighting, and stage setups for weddings,
+    festivals, and live events.
+  </p>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="service-card">🎶 High Quality Sound System</div>
+    <div class="service-card">💡 LED & Moving Head Lights</div>
+    <div class="service-card">🎤 DJ & Stage Setup</div>
+    <div class="service-card">🎧 Live Events & Concerts</div>
+  </div>
+</section>
+
+<section id="why">
+  <h2>Why Choose Audionyx</h2>
+  <div class="details-grid">
+    <div class="detail-box">🎉 Weddings & Stage Shows</div>
+    <div class="detail-box">📍 All Over Kerala</div>
+    <div class="detail-box">🎶 Pro Equipment</div>
+    <div class="detail-box">⭐ Trusted Service</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>📞 9746284420</p>
+  <p>📞 9747611424</p>
+  <p>📍 Vengara, Malappuram, Kerala</p>
+</section>
+
+<div class="social">
+  <a href="mailto:audionyxaudio@gmail.com">📧</a>
+  <a href="https://instagram.com/audionyx_audio_official" target="_blank">📸</a>
+</div>
+
+<footer>
+  © 2026 AUDIONYX LIGHT & SOUNDS
+  <span>Designed by Sanif Koyissan</span>
+</footer>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/919746284420" 
+   class="whatsapp-float" 
+   target="_blank"
+   title="Chat on WhatsApp">
+  💬
+</a>
+
+</body>
+</html>
